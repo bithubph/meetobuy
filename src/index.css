@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,400&display=swap');
+
 :root {
-    --header_font: 'Lato', sans-serif;
-    --text_font: 'Source Sans Pro', sans-serif;
+    --default_font: 'Poppins', sans-serif;
+    ;
+    --default_color: #014DA3;
 }
 
 html,
@@ -8,7 +11,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: var(--text_font);
+    font-family: var(--default_font);
 }
 
 .section_padding {
@@ -16,16 +19,42 @@ body {
     padding-left: 5.8rem;
 }
 
+.page-item {
+    margin: 0;
+}
+
+.page-link:hover,
+.page-link.is-active {
+    background: var(--default_color);
+    color: #ffffff;
+}
+
+.page-link {
+    color: var(--default_color);
+    font-size: 12px;
+}
+
 .default_btn {
-    background: #051C40 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 10px;
+    background: var(--default_color) 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 0 #014DA348;
+    border-radius: 0;
     opacity: 1;
-    padding: 20px 24px;
+    padding: 20px 42px;
     border: none;
     color: #ffffff;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.default_btn:hover {
+    box-shadow: 0 0px 0 #014DA348;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.default_btn.is-small {
+    padding: 12px 42px;
 }
 
 @media screen and (max-width: 850px) {
@@ -131,7 +160,7 @@ body {
 }
 
 .search_box button {
-    background: #051C40 0% 0% no-repeat padding-box;
+    background: var(--default_color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 10px;
     opacity: 1;
@@ -157,7 +186,7 @@ body {
     width: 80px;
     border-radius: 10px;
     margin: 0 auto;
-    background: #051C40;
+    background: var(--default_color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,7 +216,7 @@ body {
 }
 
 .modal_nav_overlay .overlay_content .link_img:hover span {
-    color: #051C40;
+    color: var(--default_color);
 }
 
 .modal_nav_overlay .closebtn {
@@ -231,7 +260,7 @@ body {
     min-height: 20px;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5.8rem;
+    padding: 1rem 6rem;
     background: transparent;
     position: absolute;
     top: 0;
@@ -315,13 +344,22 @@ body {
 }
 
 .intro__hero {
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 1rem;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url(../assets/background_images/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
+}
+
+.intro__hero.is-small {
+    min-height: 30vh;
 }
 
 .intro__hero h1 {
@@ -331,7 +369,7 @@ body {
 }
 
 .intro__hero p {
-    font-weight: 100;
+    font-weight: 200;
     font-size: 18px;
 }
 
@@ -367,4 +405,90 @@ body {
         font-size: 12px;
     }
 
+}
+
+.listing {
+    padding-top: 2rem;
+}
+
+.listing .heading {
+    margin-bottom: 50px;
+}
+
+.listing .heading .title {
+    font-size: 16px;
+    background: var(--default_color);
+    color: #ffffff;
+    padding: 20px;
+}
+
+.listing .service_request {
+    margin: 2rem auto;
+}
+
+.listing .service_request .img img {
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.23);
+}
+
+.listing .service_request .content {
+    padding: 2rem 0;
+}
+
+.listing .service_request .content h6 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.listing .service_request .content p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.listing .service_request .activity {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listing .service_request .activity span {
+    color: var(--default_color);
+    font-size: 16px;
+}
+
+.popular_services a {
+    text-decoration: none !important;
+}
+
+.d-index-category {
+    background: var(--default_color);
+    min-height: 110px;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    transition: all 0.4s ease-in-out;
+    margin: 10px auto;
+}
+
+.d-index-category:hover {
+    background: #ffffff;
+    box-shadow: 0 10px 0 #014DA348;
+    margin-top: -10px;
+}
+
+.d-index-category:hover h3,
+.d-index-category:hover span {
+    color: var(--default_color);
+}
+
+.d-index-category span {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.d-index-category h3 {
+    font-size: 18px;
+    color: #ffffff;
 }
