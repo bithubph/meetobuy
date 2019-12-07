@@ -101,6 +101,16 @@
         padding: 12px 15px;
         margin: 8px 0;
         width: 100%;
+        font-size: 15px;
+        }
+        select {
+        background-color: #eee;
+        border: none;
+        padding: 12px 15px;
+        margin: 8px 0;
+        width: 100%;
+        color: #555555;
+        font-size: 15px;
         }
         .container {
         /* background-color: #fff; */
@@ -115,7 +125,7 @@
         padding: 0;
         }
         .sign-up-container {
-        left: o;
+        left: 0;
         width: 50%;
         
         }
@@ -144,6 +154,11 @@
                 <input type="numbers" placeholder="phonenumber">
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
+                <select>
+                    <option selected="">User or Service Provider?</option>
+                    <option value="User">User</option>
+                    <option value="Service_provider">Service provider</option>
+                </select>
                 <button>Sign Up</button>
             </form>
         </div>
