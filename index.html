@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starter Kit - Index </title>
+    <title>MeetToBuy - Home </title>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="lib/themify-icons/themify-icons.css">
     <link rel="stylesheet" type="text/css" href="lib/owl/dist/assets/owl.carousel.min.css">
@@ -18,7 +18,7 @@
     </span>
     <div class="overlay_content">
         <div class="flexRow">
-            <div class="flexColumn">
+            <div class="flexColumn first">
                 <a href="#">
                     <div class="link_img">
                         <span class="ti-home"></span>
@@ -28,9 +28,9 @@
                     </div>
                 </a>
             </div>
-            <div class="flexColumn">
+            <div class="flexColumn second ">
                 <a href="#">
-                    <div class="link_img">
+                    <div class="link_img ">
                         <span class="ti-zoom-in"></span>
                     </div>
                     <div class="mt-2 link_text">
@@ -38,9 +38,9 @@
                     </div>
                 </a>
             </div>
-            <div class="flexColumn">
+            <div class="flexColumn third">
                 <a href="#">
-                    <div class="link_img">
+                    <div class="link_img ">
                         <span class="ti-bookmark-alt"></span>
                     </div>
                     <div class="mt-2 link_text">
@@ -50,9 +50,9 @@
             </div>
         </div>
         <div class="flexRow">
-            <div class="flexColumn">
+            <div class="flexColumn fourth">
                 <a href="#">
-                    <div class="link_img">
+                    <div class="link_img ">
                         <span class="ti-heart"></span>
                     </div>
                     <div class="mt-2 link_text">
@@ -60,9 +60,9 @@
                     </div>
                 </a>
             </div>
-            <div class="flexColumn">
+            <div class="flexColumn fifth">
                 <a href="#">
-                    <div class="link_img">
+                    <div class="link_img ">
                         <span class="ti-lock"></span>
                     </div>
                     <div class="mt-2 link_text">
@@ -89,15 +89,52 @@
         </a>
     </div>
     <div class="links">
-        <a href="#">Home</a>
-        <a href="#">Browse Services</a>
-        <a href="#">Get Started</a>
-        <a href="#">Sign in</a>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Browse Services</a>
+            <a href="#">Get Started</a>
+            <a href="#" class="sign_in">Sign in</a>
+        </div>
     </div>
     <div class="nav_toggle">
-        <span class="ti-layout-grid3-alt nav_toggle_icon"></span>
+        <span class="ti-menu nav_toggle_icon"></span>
     </div>
 </div>
+<section class="intro__hero">
+    <div class="section_padding col-md-6">
+        <h1>Find the best local services<br>
+            around you</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="search">
+            <form>
+                <div class="row">
+                    <div class="col-md-4 form-group">
+                        <select class="m_field">
+                            <option disabled selected>Choose State</option>
+                            <option value="Rivers">Rivers</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <select class="m_field">
+                            <option disabled selected>Choose City</option>
+                            <option value="Alakahia">Alakahia</option>
+                            <option value="Aluu">Aluu</option>
+                            <option value="Boc">Back of Chem</option>
+                            <option value="Choba">Choba</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <input type="text" class="m_field" name="" placeholder="Try 'Barber'">
+                    </div>
+                    <div class=" col-md-12 pl-2">
+                        <input type="submit" name="" class="default_btn" value="Find Service">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 
 <body>
     <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
