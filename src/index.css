@@ -422,38 +422,38 @@ body {
     padding: 20px;
 }
 
-.listing .service_request {
+.listing .service_card {
     margin: 2rem auto;
 }
 
-.listing .service_request .img img {
+.listing .service_card .img img {
     width: 100%;
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.23);
 }
 
-.listing .service_request .content {
+.listing .service_card .content {
     padding: 2rem 0;
 }
 
-.listing .service_request .content h6 {
+.listing .service_card .content h6 {
     font-size: 24px;
     font-weight: 400;
 }
 
-.listing .service_request .content p {
+.listing .service_card .content p {
     font-size: 14px;
     font-weight: 200;
 }
 
-.listing .service_request .activity {
+.listing .service_card .activity {
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
 }
 
-.listing .service_request .activity span {
+.listing .service_card .activity span {
     color: var(--default_color);
     font-size: 16px;
 }
