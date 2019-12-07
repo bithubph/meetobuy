@@ -1,0 +1,233 @@
+:root {
+    --header_font: 'Lato', sans-serif;
+    --text_font: 'Source Sans Pro', sans-serif;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--text_font);
+}
+
+.section_padding {
+    padding-right: 10em;
+    padding-left: 10em;
+}
+
+/*media queries*/
+.modal_nav_overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    background: rgba(5, 28, 64, 0.8);
+    backdrop-filter: blur(19px);
+    -webkit-backdrop-filter: blur(19px);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_nav_overlay .overlay_content {
+    position: relative;
+    margin-top: 6rem;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.search_box input,
+.search_box button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.search_box input {
+    width: 100%;
+}
+
+.search_box {
+    background: rgba(255, 255, 255, 0.5) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 25px #00000029;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14px;
+    margin-bottom: 2rem;
+}
+
+.search_box button {
+    background: #051C40 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 5px 10px;
+
+}
+
+.modal_nav_overlay .overlay_content .flexColumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 2rem 2rem;
+
+}
+
+.modal_nav_overlay .overlay_content a {
+    text-decoration: none !important;
+}
+
+.modal_nav_overlay .overlay_content .link_img {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.98s ease;
+}
+
+.modal_nav_overlay .overlay_content .link_text {
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.modal_nav_overlay .overlay_content .link_text p {
+    font-size: 14px;
+}
+
+.modal_nav_overlay .overlay_content .link_img span {
+    font-size: 25px;
+    color: #051C40;
+    transition: 0.98s ease;
+
+}
+
+.modal_nav_overlay .overlay_content .link_img:hover {
+    background: #051C40;
+
+}
+
+.modal_nav_overlay .overlay_content .link_img:hover span {
+    color: #ffffff;
+}
+
+.modal_nav_overlay .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 5.2rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+.modal_nav_overlay .closebtn i {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bolder;
+
+}
+
+@media screen and (max-width: 900px) {
+    .modal_nav {
+        padding: 1rem 1rem;
+    }
+
+    .modal_nav .brand_nav {
+        display: none;
+    }
+
+
+
+}
+
+
+.top_nav {
+    display: flex;
+    min-height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5.8rem;
+    background: #051C40;
+}
+
+
+.top_nav .brand a h3 {
+    padding: 0 10px;
+    font-size: 18px;
+    margin-top: 5px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+
+.top_nav .brand a img {
+    width: 20px;
+}
+
+.top_nav .links,
+.top_nav .nav_toggle {
+    color: #ffffff;
+}
+
+.top_nav .links {
+    margin-left: -20px;
+}
+
+.top_nav .links a {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.top_nav .links span img {
+    width: 20px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.top_nav .nav_toggle span {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 675px) {
+    .top_nav {
+        padding: 1rem 0.8rem;
+    }
+
+    .modal_nav_overlay .closebtn {
+        font-size: 50px;
+        top: 20px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+
+    .top_nav .links {
+        display: none;
+    }
+}
