@@ -20,6 +20,10 @@ Route::post('register', 'Auth\RegisterController@register');
 Route::post('logout', 'Auth\LoginController@logout');
 
 //ServiceProviders
+
+
+Route::get('services/index','ServiceProController@ind');
+Route::get('services/create','ServiceProController@create');
 Route::get('services','ServiceProController@index');
 Route::get('services/{service}','ServiceProController@show');
 Route::post('services','ServiceProController@store');

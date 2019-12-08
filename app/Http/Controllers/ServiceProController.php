@@ -10,8 +10,15 @@ use App\User;
 class ServiceProController extends Controller
 {
     //
+    public function ind(){
+        return view('servicepro/index');
+    }
+
     public function index(){
         return ServicePro::all();
+    }
+    public function create(){
+        return view('servicepro/create');
     }
     public function show($servicepro){
         $servicepro= ServicePro::findOrFail($servicepro);
